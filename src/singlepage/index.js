@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import * as S from './styled';
-import { useHistory } from 'react-router-dom';
 
 export default function Singlepage() {
 
     const [email, setEmail] = useState('');
-    const history = useHistory();
+
 
     function handleCadastro() {
         localStorage.setItem('email', email);
