@@ -5,11 +5,7 @@ export const MainContainer = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    // background-color: #2C2E43;
-    // background-color: #0A1931;
-    background-color: #4A3933;
-    // background-color: #2C2E43;
-    // width: 100vw;
+    background-color: #0F1123;
     height: 100vh;
     padding: 0 60px 0 60px;
 `;
@@ -23,6 +19,16 @@ export const LogoContainer = styled.div`
 
 export const InformacaoContainer = styled.div`
     width: 100vw;
+    color: #A98B98;
+    
+    h1 {
+        text-transform: uppercase;
+        text-align: center;
+        color: white;
+        letter-spacing: 1rem;
+        text-shadow: 2px 2px 5px #54436B;
+    }
+
 `;
 
 export const GradienteColor = styled.h1`
@@ -30,15 +36,44 @@ export const GradienteColor = styled.h1`
     font-weight: bold;
     text-transform: uppercase;
     color: transparent;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: white;
-
+    letter-spacing: .3rem;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #54436B;
+    
     &:hover {
         background-image: linear-gradient(45deg, #ff0000 , #ffa500 , #ee82ee, #4b0082);
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
         -webkit-text-stroke-width: 0;
+    };
+
+`;
+
+export const CardCadastro = styled.div`
+    padding: 1rem;
+    background-color: #54436B;
+    border-radius: 10px;
+
+    p {
+        color: black;
+        text-align: center;
+        font-weight: bold;
+    };
+
+    input {
+        width: 80%;
+        height: 25px;
+    };
+    
+    button {
+        width: 18%;
+        height: 31px;
+    };
+
+    form {
+        margin: 0 0 1rem 0;
+        align-items: center;
     };
 
 `;
